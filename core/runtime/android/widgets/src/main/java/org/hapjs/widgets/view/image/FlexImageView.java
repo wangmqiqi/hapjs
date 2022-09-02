@@ -324,6 +324,13 @@ public class FlexImageView extends GenericDraweeView implements ComponentHost, G
         maybeUpdateView(true);
     }
 
+    public String getSource() {
+        if (mSource != null) {
+            return mSource.toString();
+        }
+        return null;
+    }
+
     /**
      * update placeholder image
      */
